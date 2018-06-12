@@ -1,0 +1,124 @@
+.social-icons {
+    margin: 0;
+    right: 2.5rem;
+    bottom: 2rem;
+    width: auto;
+}
+.social-icons ul>li>a {
+    transition: all .2s ease-in-out;
+    font-size: 2rem;
+    line-height: 4rem;
+    height: 4rem;
+    width: 4rem;
+}
+.social-icons ul>li>a {
+    display: block;
+    color: #fff;
+    background-color: rgba(0,46,102,.8);
+    border-radius: 100%;
+    font-size: 2rem;
+    line-height: 4rem;
+    height: 4rem;
+    width: 4rem;
+}
+.signal{
+	  max-height: 70px;
+	  min-height: 40px;
+	  width: auto;
+}
+
+.payment-method {
+  float: center;
+  height: 200px;
+  position: relative;
+  width: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.payment-method .method{
+  position: relative;
+  background-size: contain;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  width: 200px;
+  margin:inherit;
+}
+
+input[type=radio] {
+  position: absolute;
+}
+
+input[type=radio]:checked + label{
+  border: 5px solid #fff;
+  outline: none !important;
+}
+
+.payment-method .method:hover{
+  border: 5px solid #fff;
+  outline: none !important;
+}
+
+.img1{
+  background-image: url(../img/intro-bg.jpg);
+}
+
+.img2{
+  background-image: url(../img/taverna.jpg);
+}
+
+.img3{
+  background-image: url(../img/logo-signal.png);
+}
+
+.img4{
+  background-image: url(../img/tav1.jpeg);
+}
+
+.img5{
+  background-image: url(../img/tav2.jpeg);
+}
+
+.img6{
+  background-image: url(../img/tav3.jpeg);
+}
+
+.posicaobotao{
+  padding: 30px;
+  float: center;
+  position: relative;
+}
+
+.btn-custom{
+  padding: 10px 50px 10px 50px;
+	border-radius: 50px;
+}
+.hermione{
+   max-width: 100%;
+   height: auto;
+   display: block;
+	 margin: inherit;
+  padding: inherit;
+}
+.btface{
+  background-color: #3b5998;
+  color: white;
+  border-radius: 8px;
+  padding: 5px 15px;
+  border: 0 none;
+  text-align: center;
+  margin: 10px 10px;
+  position: relative;
+  font-size: 18px;
+}
+.faceicone{
+  font-size: 25px;
+  margin: 4px 20px 4px 0px;
+  color:white;
+}
+.bemvindo{
+  margin: 200px;
+}
