@@ -109,7 +109,7 @@
                   $fb->setDefaultAccessToken($_SESSION['facebook_access_token']);
               }
               if (isset($_GET['code'])) {
-                  header('Location: http://localhost/startbootstrap-grayscale-gh-pages/index2.php');
+                  header('Location: http://localhost/Taverna/TavernaCapivaraSaltitante/index2.php');
               }
               try {
                   $profile_request = $fb->get('/me?fields=name,first_name,last_name,email');
@@ -117,7 +117,7 @@
               } catch (Facebook\Exceptions\FacebookResponseException $e) {
                   echo 'Graph returned an error: ' . $e->getMessage();
                   session_destroy();
-                  header("Location: http://localhost/startbootstrap-grayscale-gh-pages/index2.php");
+                  header("Location: http://localhost/Taverna/TavernaCapivaraSaltitante/index2.php");
                   exit;
               } catch (Facebook\Exceptions\FacebookSDKException $e) {
                   echo 'Facebook SDK returned an error: ' . $e->getMessage();
@@ -127,12 +127,12 @@
               $logoff = filter_input(INPUT_GET, 'sair', FILTER_DEFAULT);
               if (isset($logoff) && $logoff == 'true'):
                   session_destroy();
-                  header("Location: http://localhost/startbootstrap-grayscale-gh-pages/index2.php");
+                  header("Location: http://localhost/Taverna/TavernaCapivaraSaltitante/index2.php");
               endif;
               echo '<a href="?sair=true">Sair</a>';
               //var_dump($_SESSION);
           }else {
-              $loginUrl = $Login->getLoginUrl('http://localhost/startbootstrap-grayscale-gh-pages/index2.php', $permissions);
+              $loginUrl = $Login->getLoginUrl('http://localhost/Taverna/TavernaCapivaraSaltitante/index2.php', $permissions);
               echo '<a href="' . $loginUrl . '"><button class="btface"><i class="fa fa-facebook-official faceicone"></i> Entrar com o facebook </button></a>';
               echo $accessToken;
               //var_dump($_SESSION);
